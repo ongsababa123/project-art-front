@@ -1,0 +1,299 @@
+/* Home.css */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.tree-image {
+  width: 30rem;
+  margin-bottom: 20px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.apple1 {
+  top: 50px;
+  left: 100px;
+  margin-top: 20px;
+  width: 3rem;
+  z-index: 1;
+  position: absolute;
+  animation: grow 1s forwards;
+}
+
+.apple-popup1 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 10px;
+  left: 30px;
+  margin-top: 20px;
+  word-wrap: break-word;
+  max-width: 40rem; /* ปรับเป็น max-width แทน width */
+  width: 100%; /* เพิ่มให้เต็มความกว้างของพื้นที่ที่กำหนด */
+}
+
+.apple2 {
+  top: 150px;
+  left: 200px;
+  margin-top: 20px;
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  animation: grow 2s forwards;
+}
+
+.apple-popup2 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 110px;
+  left: 100px;
+  margin-top: 20px;
+}
+
+.apple3 {
+  top: 30px;
+  left: 300px;
+  margin-top: 20px;
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  animation: grow 3s forwards;
+}
+
+.apple-popup3 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 0px;
+  left: 180px;
+  margin-top: 20px;
+}
+
+.apple4 {
+  top: 20px;
+  left: 200px;
+  margin-top: 20px;
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  animation: grow 2s forwards;
+}
+
+.apple-popup4 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 0px;
+  left: 100px;
+  margin-top: 20px;
+}
+
+.apple5 {
+  top: 150px;
+  left: 380px;
+  margin-top: 20px;
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  animation: grow 1s forwards;
+}
+
+.apple-popup5 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 110px;
+  left: 200px;
+  margin-top: 20px;
+}
+
+.apple6 {
+  top: 150px;
+  left: 30px;
+  margin-top: 20px;
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  animation: grow 2s forwards;
+}
+
+.apple-popup6 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 110px;
+  left: 0px;
+  margin-top: 20px;
+}
+
+.apple7 {
+  top: 130px;
+  left: 300px;
+  margin-top: 20px;
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  animation: grow 1s forwards;
+}
+
+.apple-popup7 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 90px;
+  left: 200px;
+  margin-top: 20px;
+}
+
+.apple8 {
+  top: 80px;
+  left: 200px;
+  margin-top: 20px;
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  animation: grow 2s forwards;
+}
+
+.apple-popup8 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 40px;
+  left: 100px;
+  margin-top: 20px;
+}
+
+.apple9 {
+  top: 130px;
+  left: 120px;
+  margin-top: 20px;
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  animation: grow 1s forwards;
+}
+
+.apple-popup9 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 110px;
+  left: 100px;
+  margin-top: 20px;
+}
+
+.apple10 {
+  top: 80px;
+  left: 350px;
+  margin-top: 20px;
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  animation: grow 2s forwards;
+}
+
+.apple-popup10 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  top: 40px;
+  left: 200px;
+  margin-top: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-submit {
+  margin-top: 10px;
+}
+
+.fade-popup {
+  animation: fade-in 1s forwards; /* ใช้ animation ชื่อ fade-in ด้านล่าง */
+  opacity: 0;
+}
+/* การกำหนด animation fade-in */
+@keyframes fade-in {
+  to {
+    opacity: 1; /* แสดงข้อความแบบโปร่งใส */
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.apple-bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+}
