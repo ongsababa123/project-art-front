@@ -58,7 +58,7 @@ function Home() {
                     playing
                     loop
                     muted
-                    width="100%" // Set the width to 100% for responsiveness
+                    width="auto" // Set the width to 100% for responsiveness
                     height="auto" // Let the height adjust automatically
                 />
                 <Row className="justify-content-center">
@@ -81,7 +81,7 @@ function Home() {
                                     <Form.Group controlId="validationCustom03">
                                         <Form.Label>What do you think!!</Form.Label>
                                         <Form.Control
-                                            as="textarea"
+                                            //as="textarea"
                                             type="text"
                                             required
                                             value={input_message}
