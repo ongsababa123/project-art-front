@@ -3,14 +3,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
+ 
 }
 
-.content-container {
+/* ที่กรอก */
+.content-container { 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   position: relative;
+  overflow: hidden;
+  /* width: 100vw;
+  height: 100vh; */
+
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
 .tree-image {
@@ -244,19 +261,27 @@
   margin-top: 20px;
 }
 
+/* ที่กรอก */
 .card-content {
+  color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.8); 
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 6px rgba(252, 252, 252, 0.1); */
+  z-index: 1;
+  margin-top: -250px;
+  width: 290px;
+  
 }
 
 .button-submit {
   margin-top: 10px;
 }
+
+
 
 .fade-popup {
   animation: fade-in 1s forwards; /* ใช้ animation ชื่อ fade-in ด้านล่าง */
@@ -297,3 +322,5 @@
     transform: scale(1.1);
   }
 }
+
+

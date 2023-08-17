@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 import instance from "./axios.create";
 import { useNavigate } from "react-router-dom";
+import ReactPlayer from 'react-player';
 
 function Home() {
     document.title = 'Home';
@@ -52,48 +53,50 @@ function Home() {
     return (
         <div className="container">
             <div className="content-container pb-5">
-                <img src="./image/tree-576848_640.png" alt="รูปต้นไม้" className="img-fluid tree-image" />
-                <Col lg={6} className="mx-auto">
-                    <Card>
-                        <Card.Body className="card-content">
-                            <Card.Title>ระบบส่งข้อความ</Card.Title>
-                            <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                                <Row className="mb-3">
+            <ReactPlayer
+                    url="./video/nke1.mp4"
+                    playing
+                    loop
+                    muted
+                    width="100%" // Set the width to 100% for responsiveness
+                    height="auto" // Let the height adjust automatically
+                />
+                <Row className="justify-content-center">
+                    <Col xs={12} sm={10} md={8} lg={6}>
+                        <Card>
+                            <Card.Body className="card-content">
+                                <Form noValidate validated={validated} onSubmit={handleSubmit}>
                                     <Form.Group controlId="validationCustom01">
-                                        <Form.Label>กรอกชื่อของคุณ</Form.Label>
+                                        <Form.Label>USERNAME</Form.Label>
                                         <Form.Control
                                             required
                                             type="text"
-                                            placeholder="กรุณากรอกชื่อ"
-                                            value={input_name} // กำหนดค่า default จาก inputValue
+                                            value={input_name}
                                             onChange={(event) => setinput_name(event.target.value)}
                                         />
-                                        <Form.Control.Feedback type="invalid">
-                                            กรุณากรอกชื่อ
-                                        </Form.Control.Feedback>
+                                        {/* <Form.Control.Feedback type="invalid">
+                                            Please type your name.
+                                        </Form.Control.Feedback> */}
                                     </Form.Group>
-                                </Row>
-                                <Row className="mb-3">
                                     <Form.Group controlId="validationCustom03">
-                                        <Form.Label>กรอกข้อความของคุณ</Form.Label>
+                                        <Form.Label>What do you think!!</Form.Label>
                                         <Form.Control
                                             as="textarea"
                                             type="text"
-                                            placeholder="กรุณากรอกข้อความ"
                                             required
-                                            value={input_message} // กำหนดค่า default จาก inputValue
+                                            value={input_message}
                                             onChange={(event) => setinput_message(event.target.value)}
                                         />
-                                        <Form.Control.Feedback type="invalid">
-                                            กรุณากรอกข้อความ
-                                        </Form.Control.Feedback>
+                                        {/* <Form.Control.Feedback type="invalid">
+                                            Please type your comment.
+                                        </Form.Control.Feedback> */}
                                     </Form.Group>
-                                </Row>
-                                <Button type="submit" className="btn btn-success">ส่งข้อความ</Button>
-                            </Form>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                                    <Button type="submit" className="btn btn-success">Show up</Button>
+                                </Form>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
             </div>
         </div>
     );
